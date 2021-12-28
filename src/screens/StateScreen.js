@@ -1,14 +1,19 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
-const StateScreen = ({navigation}) => {
+const StateScreen = ({ navigation }) => {
     return (
         <View>
             <Text style={Styles.TextStyle}>Applications of ReactNative Based on UseState</Text>
             <TouchableOpacity
-                onPress={()=> navigation.navigate('Counter App')}
+                onPress={() => navigation.navigate('Counter App')}
             >
                 <Text style={Styles.AppStyle}>Counter Screen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Random Color App')}
+            >
+                <Text style={Styles.AppStyle}>Random Color App</Text>
             </TouchableOpacity>
         </View>
     )
