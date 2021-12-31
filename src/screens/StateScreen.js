@@ -15,6 +15,16 @@ const StateScreen = ({ navigation }) => {
             >
                 <Text style={Styles.AppStyle}>Random Color App</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Square Color App')}
+            >
+                <Text style={Styles.AppStyle}>Square Color App</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Text Screen App')}
+            >
+                <Text style={Styles.AppStyle}>Text Screen App</Text>
+            </TouchableOpacity>
         </View>
     )
 }

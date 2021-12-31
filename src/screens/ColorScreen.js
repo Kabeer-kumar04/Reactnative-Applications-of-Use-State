@@ -13,8 +13,6 @@ const ColorScreen = () => {
                     setColor([...color, RandomRGB()])
                 }}
             />
-
-
             <FlatList
                 keyExtractor={item => item}
                 data={color}
@@ -28,7 +26,7 @@ const ColorScreen = () => {
     )
 }
 
-const RandomRGB = () => {
+const RandomRGB = () => { 
     const red = Math.floor(Math.random() * 256);
     const blue = Math.floor(Math.random() * 256);
     const green = Math.floor(Math.random() * 256);
